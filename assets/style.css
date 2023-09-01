@@ -8,8 +8,8 @@ text-align: center;
 text-decoration: none;
 }
 body{
-    /* background-image: url('img/banner2.jpg'); */
     width: 100%;
+    height: 100%;
     object-fit: cover;
     background-color: #F6F6F6;
 }
@@ -46,4 +46,34 @@ position: relative;
 height: 70px;
 position: absolute;
    right: 10%;
+}
+@media (max-width:480px) {
+    body{
+        position: relative;
+    }
+    .container{
+        display: flex;
+        align-items: center;
+        position: absolute;
+        top: 430%;
+    }
+    .banner{
+        width: 100%;
+        object-fit: cover;
+        height: 100%;
+        position: relative;
+    }
+    .floating-wpp-button {
+        position: absolute;
+        bottom: -465px;
+        /* right: 2%; */
+    }
+    .floating-wpp-button img{
+    position: absolute;
+       right: 10%;
+    }
+    footer{
+        position: relative;
+        top: 600px;
+    }
 }
